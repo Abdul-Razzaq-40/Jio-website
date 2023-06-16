@@ -1,31 +1,74 @@
-import { Carousel } from 'react-responsive-carousel';
-import 'react-responsive-carousel/lib/styles/carousel.min.css';
+import React, { useState, useEffect, useRef } from 'react';
+import useEmblaCarousel from 'embla-carousel-react';
 import styled from 'styled-components';
 
-const StyledLegend = styled.p`
-  color: white;
-  font-size: 16px;
+const CarouselContainer = styled.div`
   text-align: center;
-  background-color: rgba(255, 0, 0, 0.5);
-  padding: 10px;
+  overflow: hidden;
+  display: flex;
+  position: relative;
 `;
 
-const CarouselComponent = () => {
-  const images = [
-    { id: 1, src: require('../assets/image1.jpg').default, alt: 'Image 1' },
-    { id: 2, src: require('../assets/image2.jpg').default, alt: 'Image 2' },
-    { id: 3, src: require('../assets/image3.jpg').default, alt: 'Image 3' },
-    // Add more image objects as needed
-  ];
+const CarouselImage = styled.img`
+  flex: 0 0 10%;
+  display: inline-block;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+`;
+
+const CarouselDots = styled.div`
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+`;
+
+const CarouselDot = styled.button`
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  border: none;
+  margin: 0 5px;
+  background-color: ${({ active }) => (active ? '#000' : '#ccc')};
+`;
+
+const CarouselImageContainer = styled.div`
+  display: flex;
+`;
+
+const StyledButton = styled.button`
+  height: 15px;
+`;
+
+const CarouselComponent = ({ images }) => {
+  const [selectedImageIndex, setSelectedImageIndex] = useState(0);
+  const carouselRef = useRef(null);
+  const { emblaRef, containerRef, prev, next, selectedIndex, slides } = useEmblaCarousel();
+
+  useEffect(() => {
+    if (emblaRef) {
+      emblaRef.current.on('select', () => {
+        const index = emblaRef.current.selectedScrollSnap();
+        setSelectedImageIndex(index);
+      });
+    }
+  }, [emblaRef]);
+
   return (
-    <Carousel>
-      {images.map((image, index) => (
-        <div key={index}>
-          <img src={image.src} alt={image.alt} />
-          <StyledLegend>{image.caption}</StyledLegend>
-        </div>
-      ))}
-    </Carousel>
+    <CarouselContainer ref={carouselRef}>
+      <CarouselImageContainer ref={containerRef}>
+        {images?.map((image, index) => (
+          <CarouselImage key={index} src={image} alt={`Image ${index}`} />
+        ))}
+      </CarouselImageContainer>
+      <StyledButton onClick={prev}>Previous</StyledButton>
+      <StyledButton onClick={next}>Next</StyledButton>
+      <CarouselDots>
+        {slides?.map((_, index) => (
+          <CarouselDot key={index} active={index === selectedIndex} />
+        ))}
+      </CarouselDots>
+    </CarouselContainer>
   );
 };
 

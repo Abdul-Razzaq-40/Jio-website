@@ -13,7 +13,7 @@ import DoctorImage from "../assets/DoctorImage.png";
 const FooterContainer = styled.footer`
     height: fit;
     background: #001252;
-    padding: 20px;
+    padding: 30px 50px 50px 50px;
     display: flex;
 `;
 
@@ -23,7 +23,7 @@ const FooterSection = styled.div`
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  margin: 150px 20px 0 20px;
+  margin: 100px 20px 0 20px;
 `;
 
 const HealthLogo = styled.img`
@@ -55,13 +55,6 @@ const CommonHeading = styled.h3`
     font: 600 normal 28px 'Open Sans';
 `;
 
-const QuickLinksHeading = styled.h3`
-  color: #FFFFFF;
-  font-weight: 600;
-  font-size: 16px;
-  font-family: 'Open Sans';
-`;
-
 const StyledLink = styled.a`
   color: #E0E0E0;
   font-family: 'Open Sans';
@@ -70,8 +63,7 @@ const StyledLink = styled.a`
 
 const OverLay = styled.div`
     display: flex;
-    justify-content: space-between;
-    // margin-top: 40px;
+    justify-content: space-around;
     margin: 40px 150px;
     border-radius: 20px;
     background-color: #26A19D;
@@ -96,7 +88,9 @@ const ButtonContainer = styled.div`
 `;
 
 const StyledText = styled.h3`
-
+  margin-top: 5px;
+  color: white;
+  font: 700 normal 30px 'Open Sans';
 `;
 
 const StyleButtons = styled.button`
@@ -104,7 +98,9 @@ const StyleButtons = styled.button`
     color: #4A4A4A;
     background: #FFFFFF;
     border-radius: 10px;
-    padding: 0 50px;
+    padding: 5px 50px;
+    margin-top: 10px;
+    border-color: transparent;
 `;
 
 const DetailsButton = styled.button`
@@ -114,7 +110,7 @@ const DetailsButton = styled.button`
     border: 2px solid #FFFFFF;
     border-radius: 10px;
     padding: 5px 50px;
-    margin-top: 20px;
+    margin-top: 10px;
 `;
 
 const MainContainer = styled.section`
@@ -125,17 +121,17 @@ const Footer = () => {
   return (
     <MainContainer>
       <OverLay>
-        <img src={DoctorImage} style={{ marginLeft: '120px' }} height={250} marginLeft={20} width="15%" alt="logo" />
+        <img src={DoctorImage} style={{ marginLeft: '150px', marginTop: '-25px' }} height={277} marginLeft={20} width="15%" alt="logo" />
         <ContentSection>
-          <p>EXCEPTIONAL VALUE AT AFFORDABLE PRICES</p>
+          <p style={{ backgroundColor: 'white', paddingLeft: '-10px' }}>EXCEPTIONAL VALUE AT AFFORDABLE PRICES</p>
           <StyledText>
-            Plans starting at &#x20B9;<strike>19,316</strike> &#x20B9;16,419/year*
+            Plans starting at &#x20B9;<strike>19,316</strike> &#x20B9;<br />16,419/year*
           </StyledText>
           <DownloadContainer>
             <StyleButtons>Start 15-day free trial</StyleButtons>
             <DetailsButton>Contact us</DetailsButton>
           </DownloadContainer>
-          <h6>Healthgro Practice comes with highly competitive pricing plans. Need help? <strong>Talk to an expert!</strong></h6>
+          <h6 style={{ color: '#FFFFFF' }}>Healthgro Practice comes with highly competitive pricing plans. Need help? <strong>Talk to an expert!</strong></h6>
         </ContentSection>
       </OverLay>
       <FooterContainer>
@@ -151,7 +147,7 @@ const Footer = () => {
         </FooterSection>
         <FooterSection>
           <ul>
-            <QuickLinksHeading>Quick links</QuickLinksHeading>
+            <CommonHeading>Quick links</CommonHeading>
             <StyledLink href="#">Academy</StyledLink><br /><br />
             <StyledLink href="#">Blogs</StyledLink><br /><br />
             <StyledLink href="#">Privacy Policy</StyledLink><br /><br />

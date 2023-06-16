@@ -28,6 +28,7 @@ const StyledButtons = styled.button`
     font: 700 normal 14px 'Open Sans';
     color: #001D85;
     border: none;
+    background-color: transparent;
 `;
 
 const StyleButtons = styled.button`
