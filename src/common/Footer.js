@@ -15,6 +15,9 @@ const FooterContainer = styled.footer`
     background: #001252;
     padding: 30px 50px 50px 50px;
     display: flex;
+    
+
+
 `;
 
 const FooterSection = styled.div`
