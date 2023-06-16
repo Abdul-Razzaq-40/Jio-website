@@ -16,7 +16,7 @@ const StyledList = styled.ul`
     list-style: none;
     display: flex;
     justify-content: center;
-    gap: 20px;
+    gap: 22px;
 `;
 
 const StyledLink = styled.a`
