@@ -6,9 +6,8 @@ const StyledNavBar = styled.nav`
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px;
-    margin: 0 15%; 
-    background: #FFFFFF;
+    padding: 0.625rem 10.5rem;
+    background: #FFF;
     border-bottom: 1px solid #ccc;
 `;
 
@@ -16,7 +15,7 @@ const StyledList = styled.ul`
     list-style: none;
     display: flex;
     justify-content: center;
-    gap: 20px;
+    gap: 1.25rem;
 `;
 
 const StyledLink = styled.a`
@@ -25,30 +24,30 @@ const StyledLink = styled.a`
 `;
 
 const StyledButtons = styled.button`
-    font: 700 normal 14px 'Open Sans';
+    font: 700 normal 0.875rem 'Open Sans';
     color: #001D85;
     border: none;
     background-color: transparent;
 `;
 
 const StyleButtons = styled.button`
-    font: 700 normal 14px/1.5 'Open Sans';
+    font: 700 normal 0.875rem/1.5 'Open Sans';
     color: #FFFFFF;
     background: #001D85;
     border-radius: 10px;
-    padding: 5px 30px;
+    padding: 0.3125px 1.875px;
 `;
 
 const ButtonContainer = styled.div`
     display: flex;
-    gap: 10px;
+    gap: 0.625px;
     align-items: center;
 `;
 
 const Navbar = () => {
     return (
         <StyledNavBar>
-            <img src={HealthGroLogo} height={60} width="20%" alt="logo" />
+            <img src={HealthGroLogo} width="20%" alt="logo" />
             <div>
                 <StyledList>
                     <li>

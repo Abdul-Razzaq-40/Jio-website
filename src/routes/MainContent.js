@@ -19,7 +19,7 @@ import phnImage from "../assets/PhoneImg.png";
 import DentalClinic from "../assets/DentalClinic.png";
 
 const StyledText = styled.h1`
-    font: normal 600 60px 'Plus Jakarta Sans';
+    font: normal 600 3.25rem 'Plus Jakarta Sans';
     color: #4A4A4A;
     margin-right: 20%;
     display: flex;
@@ -32,9 +32,9 @@ const MainContainer = styled.div`
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-top: 16px;
-    margin-left: 30px;
-    gap: 60px;
+    margin-top: 1em;
+    margin-left: 1.875em;
+    gap: 3.875em;
 `;
 
 const StyledDiv = styled.div`
@@ -44,23 +44,24 @@ const StyledDiv = styled.div`
 `;
 
 const Text = styled.h2`
-    font: 600 32px 'Plus Jakarta Sans';
+    font: 600 2rem 'Plus Jakarta Sans';
     color: #4A4A4A;
     text-align: center;
-    margin-top: 120px;
-    margin-bottom: 50px;
+    margin-top: 3.75em;
+    margin-bottom: 1.5625em;
 `;
 
 const FeatureHeading = styled.h1`
-    font: 600 32px 'Open Sans';
+    font: 600 2rem 'Plus Jakarta Sans';
     color: #4A4A4A;
     text-align: center;
+    width: 70%;
 `;
 
 const DownloadContainer = styled.div`
     display: flex;
-    margin-right: 10px;
-    gap: 10px;
+    margin-right: 0.625em;
+    gap: 0.625em;
 `;
 
 const CaoursalContainer = styled.div`
@@ -71,7 +72,7 @@ const CaoursalContainer = styled.div`
 `;
 
 const SubContainer = styled.div`
-    flex:60%;
+    flex: 50%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -84,62 +85,56 @@ const IconSection = styled.div`
 
 const Icon = styled.div`
   display: inline-block;
-  margin-bottom: 20px;
+  margin-bottom: 1.25em;
 `;
 
 const IconImage = styled.img`
-  width: 100px;
-  height: 100px;
+  width: 6.25rem;
+  height: 6.25rem;
 `;
 
 const IconText = styled.div`
-    width: 180px;
-    font: 600 16px 'Open Sans';
+    width: 12em;
+    font: 600 1rem 'Open Sans';
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     color: #4A4A4A;
-    margin-top: 5px;
-    margin-right: 20px;
-`;
-
-const Image = styled.img`
-  width: 200px;
-  height: 200px;
+    margin-top: 0.15em;
+    margin-right: 0.625em;
 `;
 
 const FeaturesContainer = styled.div`
     color: #F8F8F8;
-    margin-top: 120px;
     display: flex;
 `;
 
 const Cart = styled.div`
-    box-shadow: 0px 7.12px 35.61px rgba(0, 0, 0, 0.1);
-    margin-top: 10px;
-    flex: 40%;
-    height: 75vh;
+    box-shadow: 0px 0.44rem 2.22rem rgba(0, 0, 0, 0.1);
+    margin-left: 8em;
+    flex: 30%;
+    height: 80vh;
     text-align: left;
 `;
 
 const DetailsButton = styled.button`
-    font: normal 700 16px 'Open Sans';
+    font: normal 700 1rem 'Open Sans';
     color: #001D85;
     background: #FFFFFF;
     border: 1px solid #001D85;
     border-radius: 10px;
-    padding: 5px 20px;
-    margin-top: 20px;
+    padding: 0.15em 0.625em;
+    margin-top: 0.625em;
 `;
 
 const StyleButtons = styled.button`
-    font: 700 normal 16px 'Open Sans';
+    font: 700 normal 1rem 'Open Sans';
     color: #FFFFFF;
     background: #001D85;
     border: 0;
     border-radius: 10px;
-    padding: 5px 20px;
-    margin-top: 20px;
+    padding: 0.15em 0.625em;
+    margin-top: 0.625em;
 `;
 
 const SubContainerBrochure = styled.div`
@@ -153,14 +148,13 @@ const SubSubContainerBrochure = styled.div`
 `;
 
 const MainContentContainer = styled.div`
-    margin: 0 150px;
+    margin: 0 6.5em;
     display: flex;
     flex-direction: column;
     align-items: center;
 `;
 
 const Container = styled.div`
-    margin-top: 80px;
     height: 20vh;
     text-align: left;
 `;
@@ -188,7 +182,7 @@ const BusinessImg = styled.img`
     display: block;
     width: 100%;
     height: auto;
-    margin-left: 20px;
+    margin-left: 1.25em;
     position: absolute;
     top: 5%;
     left: 5%;
@@ -200,43 +194,38 @@ const BusinessImg = styled.img`
 const LaptopContainer = styled.div`
     position: relative;
     display: inline-block;
-    margin-left: 200px;
-`;
-
-const IphoneImage = styled.img`
-    margin-top: -5px;
 `;
 
 const PhoneContainer = styled.div`
-    margin: 0;
+    margin: 0 2em;
 `;
 
 const MobilePhoneContainer = styled.div`
     color: #F5F5F5;
-    margin-left: -30px;
-    margin-top: 120px;
+    margin-top: 7.5em;
     display: flex;
-    gap: 150px;
+    gap: 9.375em;
 `;
 
 const BrochureContainer = styled.div`
     color: #F8F8F8;
-    margin: 100px 60px 50px 60px;
+    margin: 6.25em 3.75em 3.125em 3.75em;
     display: flex;
 `;
 
 const BorchureButton = styled.button`
-    font: normal 700 16px 'Open Sans';
+    font: normal 700 1.5rem 'Open Sans';
     color: #001D85;
     background: #FFFFFF;
     border: 1px solid #001D85;
     border-radius: 10px;
-    padding: 10px 30px;
-    margin-top: 10px;
+    padding: 0.3125em 0.94em;
+    margin-top: 0.3125em;
 `;
 
 const BrochureHeading = styled.h2`
-    font: 600 32px 'Open Sans';
+    font: 600 2rem 'Plus Jakarta Sans';
+    width: 70%;
     color: #4A4A4A;
     text-align: left;
 `;
@@ -245,11 +234,12 @@ const DownloadAppContainer = styled.div`
     color: #FFFFFF;
     display: flex;
     justify-content: center;
-    margin: 50px 0px 250px 100px;
+    margin: 3.125em 0em 15.625em 6.25em;
 `;
 
 const DownloadHeading = styled.h1`
-    font: 600 32px 'Open Sans';
+    width: 70%;
+    font: 600 2rem 'Open Sans';
     color: #4A4A4A;
     text-align: left;
 `;
@@ -258,16 +248,16 @@ const NumberedParagraph = styled.p`
     color: #4A4A4A;
     counter-increment: custom-counter;
     position: relative;
-    padding-left: 40px;
-    margin: 30px 0;
+    padding-left: 2.5em;
+    margin: 1.875em 0;
 `;
 
 const Number = styled.span`
   position: absolute;
   top: 0;
   left: 0;
-  width: 30px;
-  height: 30px;
+  width: 1.875em;
+  height: 1.875em;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -279,8 +269,8 @@ const Number = styled.span`
 const Line = styled.div`
   position: absolute;
   top: 0;
-  left: 15px;
-  width: 1px;
+  left: 1em;
+  width: 0.0625em;
   height: 70%;
   background-color: #D1D1D1;
   transform: rotate(-180deg);
@@ -288,13 +278,13 @@ const Line = styled.div`
 `;
 
 const ActivateButton = styled.button`
-    font: normal 700 16px 'Open Sans';
+    font: normal 700 1rem 'Open Sans';
     color: #FFFFFF;
     background: #001D85;
     border: 1px solid #001D85;
     border-radius: 10px;
-    padding: 10px 130px;
-    margin-top: 20px;
+    padding: 0.3125em 4.0625em;
+    margin-top: 0.625em;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -304,18 +294,19 @@ const ActivateButton = styled.button`
 
 const SubHeading = styled.h3`
     color: #4A4A4A;
-    font: 600 20px Open Sans, sans-serif;
+    font: 600 1.25rem Open Sans, sans-serif;
     textAlign: left;
-    margin-left: 30px;
+    margin-left: 1.5em;
 `;
 
 const MainHeading = styled.h2`
-    margin-left: 30px;
+    margin-top: 0.5em;
+    margin-left: 1.25em;
     color: #32D3CE;
 `;
 
 const FormContainer = styled.div`
-    margin-left: 30px;
+    margin-left: 1.875em;
 `;
 
 const Field = styled.input`
@@ -323,8 +314,8 @@ const Field = styled.input`
     border: none;
     border-bottom: 2px solid #4F4F4F;
     outline: none;
-    width: 400px;
-    font: 200 20px Open Sans, sans-serif;
+    width: 90%;
+    font: 200 1.25rem Open Sans, sans-serif;
     &::placeholder {
         color: #E0E0E0;
     }
@@ -334,8 +325,8 @@ const SelectField = styled.select`
   border: none;
   border-bottom: 2px solid #4F4F4F;
   outline: none;
-  font: 200 20px Open Sans, sans-serif;
-  width: 400px;
+  font: 200 1.25rem Open Sans, sans-serif;
+  width: 90%;
   color: #E0E0E0;
 `;
 
@@ -350,10 +341,10 @@ const MainContent = () => {
     return (
         <MainContentContainer>
             <MainContainer>
-                <img src={MainImage} height={450} width={450} flex-shrink={0} margin-right={50} alt="Hospital Image" />
+                <img src={MainImage} height={'37%'} width={'37%'} flex-shrink={0} margin-right={50} alt="Hospital Image" />
                 <StyledDiv>
                     <StyledText>Grow your healthcare practice using the latest digital tools</StyledText>
-                    <p>Start your <strong>15-days FREE trial</strong> of our premium plan. Download our app now.</p>
+                    <p style={{color: '#4A4A4A'}}>Start your <strong>15-days FREE trial</strong> of our premium plan. Download our app now.</p>
                     <DownloadContainer>
                         <img src={PlayStoreIcon} height={30} alt="logo" />
                         <img src={AppStoreIcon} height={30} alt="logo" />
@@ -396,7 +387,7 @@ const MainContent = () => {
                     <DetailsButton>view detailed features</DetailsButton>
                 </SubContainer>
                 <Cart>
-                    <MainHeading>Make a wesite now!</MainHeading>
+                    <MainHeading>Make a website now!</MainHeading>
                     <SubHeading>Activate 15-day FREE trial</SubHeading>
                     <FormContainer>
                         <label for="mobile-number" style={{color: '#747474'}}>Mobile Number</label><br/>
@@ -418,14 +409,14 @@ const MainContent = () => {
                         <label for="email-address" style={{color: '#747474'}}>Email Address</label><br/>
                         <Field type="email" id="email-address" class="input-field" placeholder="Enter your email address" />
                     </FormContainer>
-                    <p style={{color: '#9A9A9A', margin: '10px 35px'}}>By activating Free Trial, you agree to our Terms & Privacy Policy, You also allow us to reach out to you through Watsapp, email and other channels for marketing purposes.</p>
+                    <p style={{color: '#9A9A9A', margin: '0.5em 1.5em', textAlign: 'center', fontSize: '0.8rem'}}>By activating Free Trial, you agree to our Terms & Privacy Policy, You also allow us to reach out to you through Watsapp, email and other channels for marketing purposes.</p>
                     <ActivateButton>Activate now</ActivateButton>
-                    <a style={{ color: '#747474', textDecoration: 'underline', marginLeft: '170px' }}>See free trial features</a>
+                    <a style={{ color: '#747474', textDecoration: 'underline', marginLeft: '8em'}}>See free trial features</a>
                 </Cart>
             </FeaturesContainer>
             <MobilePhoneContainer>
                 <PhoneContainer>
-                    <img src={PhoneImage} height={500} width="100%" alt="Phone Picture" />
+                    <img src={PhoneImage} height={'90%'} width="85%" alt="Phone Picture" />
                 </PhoneContainer>
                 <Container>
                     <FeatureHeading>How does Healthgro Practice work?</FeatureHeading>
@@ -456,7 +447,7 @@ const MainContent = () => {
             </MobilePhoneContainer>
             <BrochureContainer>
                 <SubContainerBrochure>
-                    <img src={BorchureImage} height={200} width="100%" alt="Dental Clinic" />
+                    <img src={BorchureImage} width="100%" alt="Dental Clinic" />
                 </SubContainerBrochure>
                 <SubSubContainerBrochure>
                     <BrochureHeading>Download our borchure for more details</BrochureHeading>
@@ -467,14 +458,14 @@ const MainContent = () => {
                 <DownloadSubContainer>
                     <DownloadHeading>Manage your website from anywhere and at any time</DownloadHeading>
                     <p style={{color: '#4A4A4A'}}>Download now</p>
-                    <img src={DownloadImage} height={30} width="70%" alt="Laptop" />
+                    <img src={DownloadImage} width="70%" alt="Laptop" />
                 </DownloadSubContainer>
                 <DownloadSubbContainer>
                     <LaptopContainer>
-                        <LaptopImg src={LaptopImage} height={200} width="100%" alt="Laptop" />
-                        <BusinessImg src={BusinessImage} height={200} width="100%" alt="Business card" />
+                        <LaptopImg src={LaptopImage} width="100%" alt="Laptop" />
+                        <BusinessImg src={BusinessImage} width="100%" alt="Business card" />
                     </LaptopContainer>
-                    <IphoneImage src={phnImage} height={200} width="18%" alt="Mobile" />
+                    <img src={phnImage} height={'90%'} width="18%" alt="Mobile" />
                 </DownloadSubbContainer>
             </DownloadAppContainer>
         </MainContentContainer>
